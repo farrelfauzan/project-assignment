@@ -4,6 +4,7 @@ import errorHandler from "./middleware/errorHandler";
 import employeeRoutes from "./features/employee/employee.routes";
 import projectRoutes from "./features/project/project.routes";
 import assignmentRoutes from "./features/assignment/assignment.routes";
+import { setupSwagger } from "./config/swagger";
 
 class App {
   public app: Express;
@@ -13,6 +14,7 @@ class App {
     this.config();
     this.routes();
     this.errorHandler();
+    setupSwagger(this.app);
   }
 
   private config(): void {

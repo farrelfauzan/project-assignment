@@ -29,7 +29,7 @@
    cp .env.example .env
    ```
 
-4. Update the [.env](http://_vscodecontentref_/29) file with your database credentials and other configurations.
+4. Update the `.env` file with your database credentials and other configurations.
 
 ### Database Setup
 
@@ -42,6 +42,7 @@
    ```
 
 2. Seed the database (if you have seeders):
+
    ```sh
    yarn seed
    # or
@@ -59,6 +60,18 @@
    ```
 
 2. The server will be running at `http://localhost:3000`.
+
+### Swagger API Documentation
+
+Swagger is used to document the API endpoints.
+
+1. Access the Swagger documentation at:
+
+   ```
+   http://localhost:3000/api-docs
+   ```
+
+2. The Swagger UI will provide a web interface to interact with the API endpoints.
 
 ## API Endpoints
 
