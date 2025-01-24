@@ -5,6 +5,7 @@ import employeeRoutes from "./features/employee/employee.routes";
 import projectRoutes from "./features/project/project.routes";
 import assignmentRoutes from "./features/assignment/assignment.routes";
 import { setupSwagger } from "./config/swagger";
+import { ENV } from "./config/environment";
 
 class App {
   public app: Express;
@@ -45,4 +46,4 @@ class App {
 }
 
 const app = new App();
-app.start(3000);
+app.start(ENV.PORT);
